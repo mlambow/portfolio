@@ -423,3 +423,105 @@ body {
         transform: rotateX(90deg);
     }
 }
+
+.projects {
+    max-width: 90%;
+    margin: 15% 10%;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 20px;
+    transition: transform 450ms ease-in-out;
+}
+
+.project-pic {
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.project-title {
+    padding: 10px 0;
+}
+
+.project-container {
+    background-color: transparent;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px #0ef;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.project-container:hover {
+    transform: scale(1.1);
+}
+
+.project-details {
+    letter-spacing: 0.8px;
+}
+
+.btn2 {
+    display: inline-flex;
+    padding: 6px 10px;
+    background: #1f242d;
+    box-shadow: 0 0 10px #0ef;
+    border-radius: 40px;
+    font-size: 10px;
+    color: #0ef;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn2:hover {
+    background: #0ef;
+    color: #1f242d;
+}
+
+.project-link {
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.project-link a {
+   margin: 0 10px; 
+}
+
+.contact {
+    max-width: 90%;
+    margin: 15% 10%;
+}
+
+.contact p {
+    gap: 10px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.contact-form ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form li {
+    list-style: none;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.contact ul>li {
+    margin-bottom: 15px;
+}
+
+.half {
+    width: 49%;
+    margin-left: 2%;
+    float: left;
+}
