@@ -94,6 +94,7 @@ body {
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
     opacity: 0;
+    letter-spacing: 1px;
 }
 
 .home-content h1 {
@@ -154,6 +155,7 @@ body {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -486,6 +488,7 @@ body {
     display: flex;
     margin-top: 15px;
     justify-content: space-between;
+    justify-content: last baseline;
 }
 
 .project-link a {
@@ -497,31 +500,68 @@ body {
     margin: 15% 10%;
 }
 
-.contact p {
-    gap: 10px;
-    margin: 20px 0;
-    letter-spacing: 1px;
-}
-
-.contact-form ul, li {
-    padding: 0;
-    margin: 0;
-}
-
-.contact-form li {
+ul {
     list-style: none;
-    margin-bottom: 20px;
-    overflow: hidden;
-    display: block;
-    position: relative;
 }
 
-.contact ul>li {
-    margin-bottom: 15px;
+ul>li {
+    padding: 10px 10px 10px 0;
+}
+
+ul>li>input {
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    background: #353d4b;
+    border: none;
+    color: white;
+}
+
+li>input::placeholder, textarea::placeholder {
+    color: darkgray;
 }
 
 .half {
-    width: 49%;
-    margin-left: 2%;
+    width: 50%;
     float: left;
+}
+
+.text-line {
+    padding: 0 10px 0 0;
+}
+
+.textarea {
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    outline: none;
+    background: #353d4b;
+    color: white;
+    border: none;
+}
+
+.contact p {
+    letter-spacing: 1px;
+    padding: 10px 10px 10px 0;
+}
+
+.button {
+    display: inline-flex;
+    padding: 12px 20px;
+    background: #0ef;
+    /* border-radius: 40px; */
+    font-size: 16px;
+    color: #1f242d;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background: #1f242d;
+    color: #0ef;
+    border: #0ef solid 1px;
+    box-shadow: #0ef 0 0 10px;
 }
