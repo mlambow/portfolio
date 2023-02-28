@@ -262,6 +262,15 @@ body {
     width: 60%;
 }
 
+.inline a {
+    color: #0ef;
+    text-decoration: none;
+}
+
+.inline>a:hover {
+    color: red;
+}
+
 .text-zone p {
     gap: 15px;
     margin-bottom: 20px;
@@ -456,6 +465,7 @@ body {
     margin: 10px;
     width: 250px;
     margin-bottom: 20px;
+    object-fit: contain;
 }
 
 .project-container:hover {
@@ -488,7 +498,6 @@ body {
     display: flex;
     margin-top: 15px;
     justify-content: space-between;
-    justify-content: last baseline;
 }
 
 .project-link a {

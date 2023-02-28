@@ -25,9 +25,9 @@
             <h3>Hello, It's Me.</h3>
             <h1>Wandile Mlambo</h1>
             <h3>And I'm a <span class="multiple-text"></span></h3>
-            <p>Hey I'm a web developer who specialise on JavaScript. I mainly focus on React as the weapon an Next.js, Firebase, Redux and all the UI libraries</p>
+            <p>Hey I'm a web developer who specialises on JavaScript. I enjoy building things for fun and see them come to life in the internet.</p>
             <div class="social-media">
-                <a href="#" style="--i:6"><i class="bx bxl-facebook"></i></a>
+                <a href="tel:+27815956071" style="--i:6"><i class="bx bx-phone"></i></a>
                 <a href="#" style="--i:7"><i class="bx bxl-linkedin"></i></a>
                 <a href="#" style="--i:8"><i class="bx bxl-twitter"></i></a>
                 <a href="https://github.com/mlambow" style="--i:9"><i class="bx bxl-github"></i></a>
@@ -41,9 +41,9 @@
     <section class="about-container" id="about">
         <div class="text-zone">
             <h1>About Me</h1>
-            <p>I'm a very ambitious front-end developer who loves to learn and create things that lives in the internet! I'm looking for a role in a IT company with the opportunity to work with latest technologies on challenging and diverse projects.</p>
+            <p>I'm a very ambitious front-end developer who loves to learn and create things that lives in the internet! I'm looking for a role in a IT company with the opportunity to work with the latest technologies on challenging and diverse projects.</p>
             <p>I'm a curious person who likes and enjoy challenges and learning new technologies and languages.</p>
-            <p>I'm comfortable in working with JavaScript, React, Redux (React Context API), CSS and Tailwind-CSS and REST APIs, but I'm not limited to this list as I adapt to any framework.</p>
+            <p>I'm comfortable in working with JavaScript, React, Next.JS, Redux (React Context API), CSS and Tailwind-CSS and REST APIs, as I have used all these frameworks to create my <span class="inline"><a href="#projects">projects</a></span> with them, but I'm not limited to this list as I adapt to any framework.</p>
             <p>If I may define myself in one sentence that would be a family guy, a sports and music fanatic and a food lover!</p>
         </div>
         <div class="stage-cube-cont">
@@ -85,8 +85,8 @@
 
             <div class="project-container project-card">
                 <img src="" alt="" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Netflix Clone</h3>
-                <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident optio autem voluptate inventore aspe.</p>
+                <h3 class="project-title">Weather App</h3>
+                <p class="project-details">This is a weather app when you're able to see your weather when you allow location. It will show you the degrees (low and high), wind and rain perception. It also tells you the weekly and hourly weather</p>
                 <div class="project-link">
                     <a href="netflix-clone-w-168dc.web.app" class="live-demo btn2">Live Demo</a>
                     <a href="https://github.com/mlambow/netflix-clone" class="github btn2">GitHub</a>
@@ -95,11 +95,11 @@
 
             <div class="project-container project-card">
                 <img src="" alt="" loading="lazy" class="project-pic" />
-                <h3 class="project-title">Netflix Clone</h3>
-                <p class="project-details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta provident optio autem voluptate inventore aspe.</p>
+                <h3 class="project-title">Amazon Clone</h3>
+                <p class="project-details">This is a e-commerce shop, where you are to login in using your gmail account, add different product to your cart and rmove them as it updates your price. the checkout function is coming soon</p>
                 <div class="project-link">
                     <a href="netflix-clone-w-168dc.web.app" class="live-demo btn2">Live Demo</a>
-                    <a href="https://github.com/mlambow/netflix-clone" class="github btn2">GitHub</a>
+                    <a href="https://github.com/mlambow/amazon-clone" class="github btn2">GitHub</a>
                 </div>
             </div>
 
@@ -130,30 +130,38 @@
         <h1>Contact Me</h1>
         <p>Hey if you like what you see or read and would like to know more, hit me up!</p>
         <div class="contact-form">
-            <form action="">
+            <form id='formId' method="POST">
                 <ul>
                     <li class="half">
-                        <input type="text" name="name" placeholder="NAME" required>
+                        <input type="text" name="name" placeholder="NAME" id="name" required>
                     </li>
                     <li class="half">
-                        <input type="email" name="email" placeholder="EMAIL" required>
+                        <input type="email" name="email" placeholder="EMAIL" id="email" required>
                     </li>
                     <li>
-                        <input type="text" name="subject" placeholder="SUBJECT" required>
+                        <input type="text" name="subject" placeholder="SUBJECT" id="subject" required>
                     </li>
                     <li class="text-line">
-                        <textarea name="message" placeholder="MESSAGE..." class="textarea"></textarea>
+                        <textarea name="message" placeholder="MESSAGE..." class="textarea" id="message"></textarea>
                     </li>
                     <li>
                         <input type="submit" value="SEND" class="button">
                     </li>
                 </ul>
             </form>
+            <p id="tag"></p>
         </div>
     </section>
     
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("AmO8kF6TQwbdoL9cx");
+        })();
+    </script>
 </body>
 </html>
